@@ -7,8 +7,8 @@ key requirements : company needs documentation that salaried employees did or di
  
 ## Models
 - Post -> date:date rationale: text
-- User -> Devise
-- AdminUser -> STI
+X User -> Devise
+X AdminUser -> STI
 
 ## Features:
 - Approval Workflow
