@@ -1,0 +1,31 @@
+.custom-nav{
+  margin-top: 30px;
+}
+
+.nav-link.active{
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=left], .dropdown-menu[x-placement^=right], .dropdown-menu[x-placement^=top] {
+  right: auto;
+  bottom: auto;
+}
+
+.dropdown, .dropleft, .dropright, .dropup {
+  position: relative;
+}
+
+@media (min-width: 768px){
+  .ml-md-auto, .mx-md-auto {
+    margin-left: auto!important;
+  }
+
+}
+
