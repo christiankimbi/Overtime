@@ -43,3 +43,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Refactor user
+- Refactor user association integration test in post_spec
