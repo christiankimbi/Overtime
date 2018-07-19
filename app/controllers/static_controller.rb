@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-  skip_before_action :authenticate_tenant!, :only => [ :homepage ]
+  skip_before_action :authenticate_user!, :only => [ :homepage ]
   def homepage
 
   end
