@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.float-right{
+  float: right!important;
+}
+
 @media (min-width: 768px){
   .ml-md-auto, .mx-md-auto {
     margin-left: auto!important;
