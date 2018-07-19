@@ -19,7 +19,7 @@ key requirements : company needs documentation that salaried employees did or di
 - Needs to be documented if employee did not log overtime
 
 UI:
-- Bootstrap -> formatting
+- X Bootstrap -> formatting
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
