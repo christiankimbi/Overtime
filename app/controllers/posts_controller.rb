@@ -1,8 +1,8 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show]
+  before_action :set_post, only: [:show, :edit, :update]
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order("id DESC")
   end
 
   def show
@@ -14,7 +14,7 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(post_parms)
+    @post = Post.new(post_params)
     @post.user_id = current_user.id
     if @post.save
 
@@ -25,8 +25,22 @@ class PostsController < ApplicationController
 
   end
 
+  def edit
+
+
+  end
+
+  def update
+      if @post.update(post_params)
+        redirect_to @post, notice: 'Your post was updated successfully'
+      else
+        render :edit
+      end
+  end
+
+
   private
-  def post_parms
+  def post_params
     params.require(:post).permit(:date, :rationale)
   end
 

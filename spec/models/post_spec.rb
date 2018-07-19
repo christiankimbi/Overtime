@@ -3,8 +3,7 @@ require 'rails_helper'
 RSpec.describe Post, type: :model do
 
   before do
-    @user =  User.create(email: "test@test.com", password: "password123", password_confirmation: "password123", first_name: "john", last_name: "Snow")
-    @post = Post.create(date: Date.today, rationale: "Anything", user_id: @user.id)
+    @post = FactoryBot.create(:post)
   end
 
   describe "Creation" do
