@@ -9,6 +9,9 @@
   <li class="nav-item">
     <%= link_to "Home Entries", posts_path, class: "nav-link #{active?(posts_path)}" %>
   </li>
+  <li class="nav-item">
+    <%= link_to "Add New Entry", new_post_path, class: "nav-link #{active?(new_post_path)}", id: "new_post_from_nav" %>
+  </li>
 
   <li class="dropdown float-right <%= active?(edit_user_registration_path)%> ">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
