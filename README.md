@@ -3,7 +3,6 @@
 ## Overtime App
 
 key requirements : company needs documentation that salaried employees did or did not get overtime each week
-
  
 ## Models
 - X Post -> date:date rationale: text
@@ -18,8 +17,10 @@ key requirements : company needs documentation that salaried employees did or di
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
-UI:
+## UI:
 - X Bootstrap -> formatting
+- Icons from Font Awesome
+- X Update the styles for forms
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
