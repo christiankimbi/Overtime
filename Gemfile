@@ -24,7 +24,9 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
-gem "gritter"
+gem 'gritter'
+gem 'administrate'
+gem 'bourbon'
 
 
 # Use CoffeeScript for .coffee assets and views
