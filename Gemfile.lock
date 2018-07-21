@@ -55,6 +55,8 @@ GEM
       momentjs-rails (~> 2.8)
       sass-rails (~> 5.0)
       selectize-rails (~> 0.6)
+    administrate-field-password (0.0.4)
+      administrate
     archive-zip (0.11.0)
       io-like (~> 0.3.0)
     arel (9.0.0)
@@ -286,6 +288,7 @@ PLATFORMS
 
 DEPENDENCIES
   administrate
+  administrate-field-password
   bootsnap (>= 1.1.0)
   bootstrap-datepicker-rails
   bourbon

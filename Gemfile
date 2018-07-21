@@ -26,6 +26,7 @@ gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
 gem 'gritter'
 gem 'administrate'
+gem 'administrate-field-password'
 gem 'bourbon'
 
 
