@@ -13,6 +13,7 @@
 //= require rails-ujs
 //= require jquery
 //= require twitter/bootstrap
+//= require gritter
 //= require bootstrap-datepicker
 //= require activestorage
 //= require_tree .

@@ -1,0 +1,5 @@
+<% if obj.errors.any? %>
+  <% obj.errors.full_messages.each do |msg| %>
+    <%= js add_gritter(msg, :image => :error, :title => "Overtime Application", :sticky => false) %>
+  <% end %>
+<% end %>
