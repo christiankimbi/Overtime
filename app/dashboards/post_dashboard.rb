@@ -14,6 +14,8 @@ class PostDashboard < Administrate::BaseDashboard
     rationale: Field::Text.with_options(searchable: true),
     created_at: Field::DateTime.with_options(searchable: false),
     updated_at: Field::DateTime.with_options(searchable: false),
+    updated_at: Field::DateTime.with_options(searchable: false),
+    status: Field::EnumField.with_options(searchable: false),
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -23,15 +25,16 @@ class PostDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :user,
-    :id,
     :date,
     :rationale,
+    :status,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :user,
+    :status,
     :id,
     :date,
     :rationale,
@@ -46,6 +49,7 @@ class PostDashboard < Administrate::BaseDashboard
     :user,
     :date,
     :rationale,
+    :status,
   ].freeze
 
   # Overwrite this method to customize how posts are displayed
