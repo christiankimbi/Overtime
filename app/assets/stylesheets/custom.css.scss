@@ -1,7 +1,7 @@
 @import "bourbon";
 
 .custom-nav{
-  margin-top: 30px;
+  margin-top: 45px;
 }
 
 .nav-link.active{
@@ -26,6 +26,15 @@
 
 .float-right{
   float: right!important;
+}
+
+
+
+.gritter-css2 .gritter-close {
+  background:asset_url('gritter.png')no-repeat left top!important;
+}
+.gritter-css3 .gritter-close {
+  background:asset_url('gritter-close.png') no-repeat!important;
 }
 
 @media (min-width: 768px){
