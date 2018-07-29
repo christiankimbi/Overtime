@@ -47,3 +47,4 @@ Things you may want to cover:
 
 ## Refactor user
 - Refactor user association integration test in post_spec
+- Refator post/_form for admin user list status
