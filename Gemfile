@@ -28,7 +28,7 @@ gem 'gritter'
 gem 'administrate'
 gem 'administrate-field-password'
 gem 'bourbon'
-
+gem 'pundit', '~>1.1'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
