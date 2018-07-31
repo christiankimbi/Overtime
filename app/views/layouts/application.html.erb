@@ -10,8 +10,7 @@
 </head>
 
 <body>
-<%= gflash %>
-<%= js add_gritter(flash[:notice],:image => :notice, :title => "Overtime Application", :sticky => false) %>
+<%= render 'layouts/alerts' %>
 <div class="container">
   <div class="row">
     <%= render 'shared/nav' %>

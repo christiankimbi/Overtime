@@ -1,0 +1,8 @@
+<%= gflash %>
+<% if flash[:alert] %>
+  <%= js add_gritter(flash[:notice],:image => :warning, :title => "Overtime Application", :sticky => false) %>
+<% elsif flash[:error] %>
+  <%= js add_gritter(flash[:error],:image => :error, :title => "Overtime Application", :sticky => false) %>
+<% else flash[:notice] %>
+  <%= js add_gritter(flash[:notice],:image => :notice, :title => "Overtime Application", :sticky => false) %>
+<% end %>
