@@ -5,7 +5,7 @@ puts "User created"
 puts "Created Admin"
 
 100.times do |post|
-  Post.create(date: Date.today, rationale: "rationale content no:  #{post}", user_id:  @user.id)
+  Post.create(date: Date.today, rationale: "rationale content no:  #{post}", user_id:  @user.id, overtime_request: 2.5)
 end
 
 puts "100 post have been created"

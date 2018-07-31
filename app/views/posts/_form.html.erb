@@ -1,6 +1,12 @@
 <%= render 'shared/errors', obj: @post %>
 
 <%= form_for @post, html: {class: "form-horizonL", role: "form"} do |f| %>
+
+  <div class="form-group">
+    <%= f.label :overtime_request %>
+    <%= f.number_field :overtime_request, step: :any, class: "form-control" %>
+  </div>
+
   <div class="form-group">
     <%= f.label :date %>
     <%= f.date_field :date, class: "form-control datepicker" %>
@@ -9,6 +15,8 @@
     <%= f.label :rationale %>
     <%= f.text_area :rationale, class: "form-control", rows: "10" %>
   </div>
+
+
     <%=  render partial:  'status', locals: {f: f} if current_user.type == 'AdminUser' %>
   <%= f.submit "Save", class: "btn btn-primary btn-block" %>
 <% end %>
