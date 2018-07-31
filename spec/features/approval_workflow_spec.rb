@@ -20,7 +20,6 @@ describe 'navigate' do
       expect(@post.reload.status).to eq('approved')
     end
 
-    it 'can be edit '
 
   end
 end
