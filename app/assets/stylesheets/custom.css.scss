@@ -37,6 +37,14 @@
   background:asset_url('gritter-close.png') no-repeat!important;
 }
 
+.index-icons{
+  font-size: 1.25em;
+}
+.index-icons:hover{
+  text-decoration: none;
+  color: #212121;
+}
+
 @media (min-width: 768px){
   .ml-md-auto, .mx-md-auto {
     margin-left: auto!important;
