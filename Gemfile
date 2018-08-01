@@ -29,6 +29,7 @@ gem 'administrate'
 gem 'administrate-field-password'
 gem 'bourbon'
 gem 'pundit', '~>1.1'
+gem 'twilio-ruby'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

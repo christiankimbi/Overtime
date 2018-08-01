@@ -8,18 +8,19 @@ key requirements : company needs documentation that salaried employees did or di
 - X Post -> date:date rationale: text
 - X User -> Devise
 - X AdminUser -> STI
+- Audit Log
 
 ## Features:
 - Approval Workflow
 - SMS Sending -> link to approval or overtime input
-- Administrate admin dashboard
-- Block non-admin and guest users
+- X Administrate admin dashboard
+- X Block non-admin and guest users
 - Email summary to managers for approval
 - Needs to be documented if employee did not log overtime
 
 ## UI:
 - X Bootstrap -> formatting
-- Icons from Font Awesome
+- XIcons from Font Awesome
 - X Update the styles for forms
 
 This README would normally document whatever steps are necessary to get the
