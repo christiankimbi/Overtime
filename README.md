@@ -23,6 +23,14 @@ key requirements : company needs documentation that salaried employees did or di
 - XIcons from Font Awesome
 - X Update the styles for forms
 
+
+## TODOS:
+
+- Integrate validation for phone attribute in User:
+- No spaces or dashes
+- Exactly 10 characters have to be a number
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
