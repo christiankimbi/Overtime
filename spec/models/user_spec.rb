@@ -12,7 +12,16 @@ RSpec.describe User, type: :model do
 
     it "cannot be created without firstname, lastname" do
       @user.first_name = nil
-      @user.last_name =nil
+      expect(@user).to_not  be_valid
+    end
+
+    it "cannot be created without firstname, lastname" do
+      @user.last_name = nil
+      expect(@user).to_not  be_valid
+    end
+
+    it "cannot be created without phone number" do
+      @user.phone = nil
       expect(@user).to_not  be_valid
     end
   end

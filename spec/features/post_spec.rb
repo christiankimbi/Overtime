@@ -32,7 +32,7 @@ describe 'navigate' do
     end
 
     it 'has a scope to thr only post creators can see their posts' do
-      other_user = User.create(email: "chris@dren.co.za", password: "kringle1$", password_confirmation: "kringle1$", first_name: "Christian", last_name: "Kimbi")
+      other_user = User.create(email: "chris@dren.co.za", password: "kringle1$", password_confirmation: "kringle1$", first_name: "Christian", last_name: "Kimbi", phone: "+27764146411")
       post_from_other_user = Post.create(date: Date.today, rationale: "This post shouldn't be seen", user_id: other_user.id, overtime_request: 3.5)
 
       visit posts_path
