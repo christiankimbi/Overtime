@@ -12,7 +12,7 @@ key requirements : company needs documentation that salaried employees did or di
 
 ## Features:
 - Approval Workflow
-- SMS Sending -> link to approval or overtime input
+- SMS Sending -> link to approval or overtime input -> Integrate with Heroku Scheduler
 - X Administrate admin dashboard
 - X Block non-admin and guest users
 - Email summary to managers for approval
@@ -57,3 +57,19 @@ Things you may want to cover:
 ## Refactor user
 - Refactor user association integration test in post_spec
 - Refator post/_form for admin user list status
+
+
+Goal of audit log:
+Keep track of if a employee had overtime or not
+
+Dependencies: 
+- User
+Attrs: 
+-Status:integer (enum) - > pending, complete
+- date:date -> 
+
+Monday
+|
+|
+Sunday
+
