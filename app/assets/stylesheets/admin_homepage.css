@@ -10,10 +10,21 @@
 
 .homepage-block{
 
-        margin: 10px;
-        padding: 15px;
-    background-color: #2af;
+
+}
+
+.homepage-block > div{
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #0a4d94;
     color: #fff;
     box-sizing: border-box;
     border-radius: 3px;
+}
+.homepage-block:nth-child(odd) > div{
+    background-color: #333;
+}
+
+.pending-details{
+    font-weight: 900;
 }

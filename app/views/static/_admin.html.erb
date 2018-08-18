@@ -1,16 +1,7 @@
 <div  class="pending-homepage row">
-  <div class="homepage-block col-md-3">
-    <p>sdfsdf</p>
-  </div>
-  <div class="homepage-block col-md-3">
-    <p>sdfsdf</p>
-  </div>
-  <div class="homepage-block col-md-3">
-    <p>sdfsdf</p>
-  </div>
-  <div class="homepage-block col-md-3">
-    <p>sdfsdf</p>
-  </div>
+<h2 align="center" >Items pending your approval</h2>
+  <hr>
+ <%= render partial: 'pending_approval', locals: {obj: @pending_approvals} %>
 </div>
 
 <div  class="pending-homepage">
