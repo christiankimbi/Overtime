@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'AuditLog Feature' do
-  let(:audit_log){ audit_log = FactoryBot.create(:audit_log)}
+
 
   describe 'index' do
     before do
@@ -21,8 +21,13 @@ describe 'AuditLog Feature' do
       expect(page).to have_content(/KIMBI/)
     end
 
-    xit 'cannot be accesssed by non admin users' do
+    it 'cannot be accesssed by non admin users' do
+      logout(:user)
+      user = FactoryBot.create(:user)
+      login_as(user, :scope=>:user)
 
+      visit audit_logs_path
+      expect(current_path).to eq(root_path)
     end
   end
 end
