@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
 
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+  def admin_types
+    ['AdminUser']
+  end
+
   private
   def user_not_authorized
     gflash :warning =>  "You a re not authorized to perform this action."
@@ -11,4 +15,3 @@ class ApplicationController < ActionController::Base
   end
 
 end
-
