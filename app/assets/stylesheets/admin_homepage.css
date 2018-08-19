@@ -25,6 +25,10 @@
     background-color: #333;
 }
 
+.homepage-block > div:hover{
+    background: #660031;
+}
+
 .pending-details{
     font-weight: 900;
 }

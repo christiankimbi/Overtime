@@ -4,8 +4,11 @@
  <%= render partial: 'pending_approval', locals: {obj: @pending_approvals} %>
 </div>
 
-<div  class="pending-homepage">
-  <div>
-    <p>Hehheeheh</p>
-  </div>
+<div  class="pending-homepage row">
+  <h2 align="center" >Confirmation Log</h2>
+  <hr>
+  <%= render partial: 'confirmation_log', locals: {obj: @recent_audit_items} %>
+
+  <div class="clear"></div>
+  <%= link_to 'View All Items', audit_logs_path, class: 'btn btn-primary' %>
 </div>

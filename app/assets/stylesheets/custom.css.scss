@@ -28,7 +28,9 @@
   float: right!important;
 }
 
-
+.clear{
+  clear: both;
+}
 
 .gritter-css2 .gritter-close {
   background:asset_url('gritter.png')no-repeat left top!important;
