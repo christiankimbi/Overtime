@@ -1,14 +1,15 @@
 <div class="container">
   <div class="row">
-    <div class="column col-md-6">
-      <div class=" jumbotron employee-blocks">
+    <div class="column col-md-12">
+      <div class=" well employee-blocks">
         <p>ahdhd</p>
       </div>
     </div>
 
-    <div class="column col-md-6">
-      <div class=" jumbotron employee-blocks">
-        <p>ahdhd</p>
+    <div class="column col-md-12">
+      <div class=" well employee-blocks">
+        <h3>Pending Your Confirmation</h3>
+        <%=  render partial: 'pending_audit_confirmation', locals: {pending_audit_confirmations: @pending_audit_confirmations} %>
       </div>
     </div>
 
