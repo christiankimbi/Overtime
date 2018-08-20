@@ -1,15 +1,20 @@
 <div class="container">
   <div class="row">
-    <div class="column col-md-12">
-      <div class=" well employee-blocks">
-        <p>ahdhd</p>
+
+
+    <% if @pending_audit_confirmations.count > 0 %>
+      <div class="column col-md-12">
+        <div class=" well employee-blocks">
+          <h3>Pending Your Confirmation</h3>
+          <%=  render partial: 'pending_audit_confirmation', locals: {pending_audit_confirmations: @pending_audit_confirmations} %>
+        </div>
       </div>
-    </div>
+    <% end %>
 
     <div class="column col-md-12">
       <div class=" well employee-blocks">
-        <h3>Pending Your Confirmation</h3>
-        <%=  render partial: 'pending_audit_confirmation', locals: {pending_audit_confirmations: @pending_audit_confirmations} %>
+        <h3>Request Overtime</h3>
+        <%= link_to "Request Overtime", new_post_path, class: "btn btn-primary btn-block btn-large" %>
       </div>
     </div>
 
