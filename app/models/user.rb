@@ -11,6 +11,8 @@ class User < ApplicationRecord
   validates_presence_of :first_name, :last_name, :phone
   validates_format_of :phone, with: PHONE_REGEX
 
+  #scope :employees, ->{where(type: nil)}
+
   def full_name
     last_name.upcase + ", " + first_name
   end
