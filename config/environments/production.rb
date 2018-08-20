@@ -94,17 +94,27 @@ Rails.application.configure do
 
 
   #mail Settings
-  config.action_mailer.default_url_options = { host: 'https://overtimeapp1004.herokuapp.com/' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      address:              'mail.dren.co.za',
-      port:                 26,
-      user_name:            'info@dren.co.za',
-      password:             'mast077gild158',
-      authentication:       :login,
-      openssl_verify_mode: "none",
-      enable_starttls_auto: true }
+  #config.action_mailer.default_url_options = { host: 'https://overtimeapp1004.herokuapp.com/' }
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = {
+  #    address:              'mail.dren.co.za',
+  #    port:                 26,
+  #    user_name:            'info@dren.co.za',
+  #    password:             'mast077gild158',
+  #    authentication:       :login,
+  #    openssl_verify_mode: "none",
+  #    enable_starttls_auto: true }
 
   #config.action_mailer.perform_deliveries = true
+
+  ActionMailer::Base.smtp_settings ={
+      :port =>              ENV['SPARKPOST_SMTP_PORT'],
+      :address =>           ENV['SPARKPOST_SMTP_HOST'],
+      :user_name =>           ENV['SPARKPOST_SMTP_USERNAME'],
+      :password =>           ENV['SPARKPOST_SMTP_PASSWORD'],
+      :authentication => :login,
+      :enable_starttls_auto => true
+  }
+  ActionMailer::Base.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
 end

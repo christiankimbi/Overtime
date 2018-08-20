@@ -10,5 +10,6 @@ module SmsTool
                         to: number,
                         body: message
     )
+    puts "Message created"
   end
 end
