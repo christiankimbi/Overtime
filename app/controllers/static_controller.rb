@@ -5,7 +5,8 @@ class StaticController < ApplicationController
       @pending_approvals = Post.submitted
       @recent_audit_items = AuditLog.last(10)
     else
-      @pending_audit_confirmations = current_user.audit_logs if current_user
+      #TO DO FIX SCOPE
+      @pending_audit_confirmations = current_user.audit_logs.pending if current_user
     end
   end
 end
