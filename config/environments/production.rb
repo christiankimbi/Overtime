@@ -94,7 +94,7 @@ Rails.application.configure do
 
 
   #mail Settings
-  #config.action_mailer.default_url_options = { host: 'https://overtimeapp1004.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'https://overtimeapp1004.herokuapp.com/' }
   #config.action_mailer.delivery_method = :smtp
   #config.action_mailer.smtp_settings = {
   #    address:              'mail.dren.co.za',
