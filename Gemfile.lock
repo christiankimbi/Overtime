@@ -55,6 +55,9 @@ GEM
       momentjs-rails (~> 2.8)
       sass-rails (~> 5.0)
       selectize-rails (~> 0.6)
+    administrate-field-enum (0.0.7)
+      administrate
+      rails (>= 4.2, < 6.0)
     administrate-field-password (0.0.4)
       administrate
     archive-zip (0.11.0)
@@ -302,6 +305,7 @@ PLATFORMS
 
 DEPENDENCIES
   administrate
+  administrate-field-enum
   administrate-field-password
   bootsnap (>= 1.1.0)
   bootstrap-datepicker-rails
