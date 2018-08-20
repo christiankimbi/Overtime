@@ -8,7 +8,7 @@ key requirements : company needs documentation that salaried employees did or di
 - X Post -> date:date rationale: text
 - X User -> Devise
 - X AdminUser -> STI
-- Audit Log
+- X Audit Log
 
 ## Features:
 - Approval Workflow
@@ -16,11 +16,12 @@ key requirements : company needs documentation that salaried employees did or di
 - X Administrate admin dashboard
 - X Block non-admin and guest users
 - Email summary to managers for approval
-- Needs to be documented if employee did not log overtime
+- X Needs to be documented if employee did not log overtime
+- Create audit log for each text message
 
 ## UI:
 - X Bootstrap -> formatting
-- XIcons from Font Awesome
+- X Icons from Font Awesome
 - X Update the styles for forms
 
 
