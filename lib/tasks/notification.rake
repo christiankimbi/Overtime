@@ -4,9 +4,10 @@ namespace :notification do
 
     if Time.now.monday?
      employees = Employee.all
+     notification_message = "Please log into the overtime management dashboard to request overtime or confirm your hours for last week : https://overtimeapp1004.herokuapp.com"
 
      employees.each do |employee|
-       notification_message = "Dear, #{employee.full_name}. Please log into the overtime management dashboard to request overtime or confirm your hours for last week : https://overtimeapp1004.herokuapp.com"
+       AuditLog.create!(user_id: employee.id)
        SmsTool.send_sms(number: employee.phone, message: notification_message)
      end
 
