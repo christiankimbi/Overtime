@@ -5,13 +5,10 @@ module SmsTool
   @client = Twilio::REST::Client.new account_sid, auth_token
 
   def self.send_sms(number:,  message:)
-    puts  ENV['TWILIO_PHONE_NUMBER']
-
     @client.messages.create(
                         from: ENV['TWILIO_PHONE_NUMBER'],
                         to: number,
                         body: message
     )
-    puts "Message created"
   end
 end
