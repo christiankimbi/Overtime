@@ -17,8 +17,17 @@ key requirements : company needs documentation that salaried employees did or di
 - X Block non-admin and guest users
 - X Email summary to managers for approval
 - X Needs to be documented if employee did not log overtime
-- Create audit log for each text message
+- X Create audit log for each text message
 - Need to update end date when confirmed
+- Need to update the audit log status when an overtime request has been rejected
+- Update buttons on employee home page
+- Update buttons sort order on employee homepage
+- Remove unnecessary nav bar buttons for managers 
+- Fix admin dashboard bug
+- Implement honeybadger error reporting
+- Implement new relic for keeping the site alive
+
+
 
 ## UI:
 - X Bootstrap -> formatting

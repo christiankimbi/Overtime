@@ -4,11 +4,11 @@
 
 <ul class="nav nav-tabs custom-nav">
   <li class="nav-item">
-    <%= link_to "Home", root_path, class: "nav-link #{active?(root_path)}" %>
+    <%= link_to "", root_path, class: "nav-link #{active?(root_path)} glyphicon glyphicon-home" %>
   </li>
   <% if current_user %>
   <li class="nav-item">
-    <%= link_to "Time Entries", posts_path, class: "nav-link #{active?(posts_path)}" %>
+    <%= link_to "Entries", posts_path, class: "nav-link #{active?(posts_path)}" %>
   </li>
     <!-- TODO: Possibly refactor " -->
   <%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
