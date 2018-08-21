@@ -32,6 +32,7 @@ gem 'bourbon'
 gem 'pundit', '~>1.1'
 gem 'twilio-ruby'
 gem 'kaminari'
+gem 'honeybadger', '~> 3.1'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
