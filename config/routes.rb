@@ -5,12 +5,12 @@ Rails.application.routes.draw do
     end
   end
   namespace :admin do
+      resources :admin_users
+      resources :employees
       resources :users
       resources :posts
-      resources :admin_users
-
       root to: "users#index"
-    end
+  end
   resources :posts do
     member do
       get :approve
