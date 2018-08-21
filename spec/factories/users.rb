@@ -4,7 +4,7 @@ FactoryBot.define do
   end
 
 
-  factory :user do
+  factory :user, class: "Employee" do
     first_name "Chris"
     last_name  "Kimbi"
     email { generate :email}
@@ -12,6 +12,7 @@ FactoryBot.define do
     password_confirmation "password123$"
     phone "+27761416411"
   end
+
 
   factory :admin_user, class: "AdminUser" do
     first_name "Jane"
